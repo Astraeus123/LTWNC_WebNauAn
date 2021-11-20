@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "_MainLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Food &amp; Recipes Web Template</title>
+    <link rel="stylesheet" type="text/css" href="~/asset/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <a href="@Url.Action("Index","Home")"><img src="~/asset/images/logo.png" alt="Logo"></a>
+        </div>
+        <form action="index.html">
+            <input type="text" value="Search" id="search">
+            <input type="submit" value="" id="searchbtn">
+        </form>
+    </div>
+    <div class="body">
+        <div>
+            <div class="header">
+                <ul>
+                    <li class="current">
+                       @Html.ActionLink("Trang chủ","Index","Home")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Công thức","Index", "Cooking")
+                    </li>
+                    <li>
+                        <a href="featured.html">Công thức nổi bật</a>
+                    </li>
+                    <li>
+                        <a href="videos.html">Videos</a>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Về chúng tôi", "About", "Home")
+                    </li>
+                </ul>
+            </div>
+           
+           
+    @RenderBody()
+    <div class="footer">
+        <div>
+            <p>
+                &copy;
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+

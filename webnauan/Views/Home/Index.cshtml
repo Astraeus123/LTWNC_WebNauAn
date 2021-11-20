@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="body">
+    <div>
+        <a href="index.html"><img src="~/asset/images/turkey.jpg" alt="Image"></a>
+    </div>
+    <ul>
+        <li class="current">
+            <a href="blog.html"><img src="~/asset/images/holi-turkey.jpg" alt="Image"></a>
+            <div>
+                <h2><a href="blog.html">Gà Tây Quay</a></h2>
+                <p>
+                    Mô tả
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="blog.html"><img src="~/asset/images/fruits-and-bread.jpg" alt="Image"></a>
+            <div>
+                <h2><a href="blog.html">Bánh &amp; Trái Cây</a></h2>
+                <p>
+                   Mô tả
+                </p>
+            </div>
+        </li>
+        <li>
+            <a href="blog.html"><img src="~/asset/images/dessert.jpg" alt="Image"></a>
+            <div>
+                <h2><a href="blog.html">Đồ Tráng Miệng</a></h2>
+                <p>
+                    Mô tả
+
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <ul>
+        <li>
+            <h2><a href="featured.html">Công thức nổi bật</a></h2>
+            <a href="featured.html"><img src="~/asset/images/featured.jpg" alt="Image"></a>
+        </li>
+        <li>
+            <h2>@Html.ActionLink("Công thức", "Index", "Cooking")</h2>
+            <a href="@Url.Action("Index","Cooking")"><img src="~/asset/images/a-z.jpg" alt="Image"></a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <h2><a href="videos.html">Videos</a></h2>
+            <a href="videos.html"><img src="~/asset/images/videos.jpg" alt="Image"></a>
+        </li>
+        <li>
+            <h2><a href="blog.html">Blog</a></h2>
+            <a href="blog.html"><img src="~/asset/images/blog.jpg" alt="Image"></a>
+        </li>
+    </ul>
+</div>
+        </div>
+<div>
+    <div>
+        <h3>Video Hướng Dẫn</h3>
+        <a href="videos.html"><img src="~/asset/images/cooking-video.png" alt="Image"></a>
+        <span>Món Chay</span>
+    </div>
+    <div>
+        <h3>Bếp Của NTS</h3>
+        <ul id="featured">
+            <li>
+                <a href="recipes.html"><img src="~/asset/images/sandwich.jpg" alt="Image"></a>
+                <div>
+                    <h2><a href="recipes.html">Sandwich giăm bông</a></h2>
+                    <span>by: NganNgan</span>
+                </div>
+            </li>
+            <li>
+                <a href="recipes.html"><img src="~/asset/images/biscuit-and-coffee.jpg" alt="Image"></a>
+                <div>
+                    <h2><a href="recipes.html">Biscuit &amp; Sandwich</a></h2>
+                    <span>by: ThoNguyen</span>
+                </div>
+            </li>
+            <li>
+                <a href="recipes.html"><img src="~/asset/images/pizza.jpg" alt="Image"></a>
+                <div>
+                    <h2><a href="recipes.html">Cách làm Pizza</a></h2>
+                    <span>by: SangTran</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Blog</h3>
+        <ul id="blog">
+            <li>
+                <a href="blog.html">Bài viết nổi bật.</a>
+                <span class="date">Feb 15, by NganNgan </span>
+            </li>
+            <li>
+                <a href="blog.html">Bài viết nổi bật.</a>
+                <span class="date">Feb 16, by ThoNguyen</span>
+            </li>
+            <li>
+                <a href="blog.html">Bài viết nổi bật.</a>
+                <span class="date">March 15, by SangTran</span>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h3>Liên Hệ</h3>
+        <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+        <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+        <a href="http://freewebsitetemplates.com/go/youtube/" target="_blank" id="youtube">Youtube</a>
+        <a href="http://freewebsitetemplates.com/go/flickr/" target="_blank" id="flickr">Flickr</a>
+        <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+    </div>
+</div>
+    </div>
